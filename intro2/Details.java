@@ -6,3 +6,6 @@ class Details{
 		System.out.println("Email : karun@gmail.com");
 	}
 }
+https://github.com/KARUNAKARPUSULURI/52r_java
+
+https://github.com/KARUNAKARPUSULURI/52r_java
