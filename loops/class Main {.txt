@@ -1,0 +1,47 @@
+class Main {
+    public static void main(String[] args) {
+        int num = 98765432;
+        int count = 0; //4
+        while(num > 0){ //1 > 0
+            num = num /10; 
+            count = count + 1;
+        }
+        System.out.println(count);
+    }
+}
+-----------------------------
+
+class Main {
+    public static void main(String[] args) {
+        int num = 0000; 
+        int copy = num;
+        int revNum = 0; 
+        while(num > 0){ 
+            int rem = num % 10; 
+            revNum = revNum*10 + rem;
+            num = num / 10;
+        }
+        if(copy == revNum){
+            System.out.println("palindrome");
+        }else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+-------------------------------------
+class Main {
+    public static void main(String[] args) {
+        int num = 83;
+        boolean isPrime = true;
+        for(int i = 2; i <= num/2; i++){
+            if(num % i == 0){
+                isPrime = false;
+            }
+        }
+        if(isPrime){
+            System.out.println("prime number");
+        }else{
+            System.out.println("not a prime number");
+        }
+    }
+}
